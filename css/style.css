@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*
 * Trunk version 2.0.0
 */
@@ -38,6 +37,32 @@ label {
 
 p {
 	margin: 0;
+}
+
+
+
+.About-us-text {
+	display: inline-block !important;
+	list-style: circle !important;
+}
+.About-us-text li {
+	display: list-item;
+	list-style-position: inside;
+}
+
+.About-us-quote {
+		position: relative;
+		text-align: left;
+		padding: 30px 15px;
+		letter-spacing: .025em;
+		background: #ffffff;
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+		filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.15));
+		width: 78%;
+		font-size: 15px;
+		margin: auto;
+		margin-top: 30px;
 }
 
 ul,
@@ -93,6 +118,14 @@ figure {
 
 html p a:hover {
 	text-decoration: none;
+}
+
+/*
+*
+* Logo Partners Height
+*/
+.logo-height {
+	height: 78px;
 }
 
 /*
@@ -6637,13 +6670,18 @@ textarea.textarea-lg {
 	margin-top: 30px;
 }
 
+.test1 {
+	width: 220px;
+	height: 117px;
+}
+
 .quote-jean {
 	position: relative;
 	max-width: 520px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 10px;
-	background-image: url(../images/quote-jean.png);
+/* 	background-image: url(../images/quote-jean.png); */
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 }
