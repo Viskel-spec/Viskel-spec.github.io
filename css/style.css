@@ -6,6 +6,107 @@
 *
 * Contexts
 */
+
+/* тестовое поле */
+/* .rd-navbar-static .rd-navbar-dropdown li > a,
+.rd-navbar-static .rd-navbar-megamenu li > a {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 6px 16px;
+} */
+
+.rd-navbar-static .rd-navbar-dropdown li.focus > a, .rd-navbar-static .rd-navbar-dropdown li.opened > a, .rd-navbar-static .rd-navbar-dropdown a:hover,
+.rd-navbar-static .rd-navbar-megamenu li.focus > a,
+.rd-navbar-static .rd-navbar-megamenu li.opened > a,
+.rd-navbar-static .rd-navbar-megamenu a:hover {
+  color: #fff;
+  background: #007bff;
+  z-index: 1;
+}
+
+.rd-navbar-static .rd-navbar-dropdown {
+  width: 270px;
+}
+
+.rd-navbar-static .rd-navbar-megamenu {
+  margin-top: 10px;
+  left: 0;
+  right: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 16px 8px;
+}
+
+.rd-navbar-static .rd-navbar-megamenu > li {
+  display: table-cell;
+}
+
+
+.rd-navbar-static .rd-navbar-nav li.rd-navbar--has-dropdown {
+  position: relative;
+}
+
+.rd-navbar-static .rd-navbar-nav li.focus > .rd-navbar-dropdown, .rd-navbar-static .rd-navbar-nav li.focus > .rd-navbar-megamenu,
+.rd-navbar-static .rd-navbar-nav li.opened > .rd-navbar-dropdown,
+.rd-navbar-static .rd-navbar-nav li.opened > .rd-navbar-megamenu {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  z-index: 500;
+}
+
+.rd-navbar-static .rd-navbar-nav > li {
+  display: inline-block;
+}
+
+.rd-navbar-static .rd-navbar-nav > li > .rd-navbar-dropdown, .rd-navbar-static .rd-navbar-nav > li > .rd-navbar-megamenu {
+  top: 100%;
+  z-index: 1;
+}
+
+.rd-navbar-static .rd-navbar-nav > li > .rd-navbar-dropdown {
+  left: 50%;
+  margin-top: 10px;
+  margin-left: -135px;
+}
+
+.rd-navbar-static .rd-navbar-nav > li > .rd-navbar-dropdown .rd-navbar-dropdown {
+  left: 100%;
+  top: -8px;
+  z-index: 2;
+}
+
+.rd-navbar-fixed .rd-navbar-dropdown,
+.rd-navbar-fixed .rd-navbar-megamenu {
+  display: none;
+}
+
+.rd-navbar-fixed .rd-navbar-submenu {
+  position: relative;
+}
+
+.rd-navbar-fixed .rd-navbar-submenu li > a {
+  padding-left: 32px;
+}
+
+.rd-navbar-fixed .rd-navbar-submenu .rd-navbar-dropdown li li > a,
+.rd-navbar-fixed .rd-navbar-submenu .rd-navbar-megamenu ul li li > a {
+  padding-left: 48px;
+}
+
+.rd-navbar-fixed .rd-navbar-submenu.opened > .rd-navbar-dropdown,
+.rd-navbar-fixed .rd-navbar-submenu.opened > .rd-navbar-megamenu {
+  display: block;
+}
+/* тестовое поле конец */
+
+
+
+
+
 a:focus,
 button:focus {
 	outline: none !important;
@@ -20848,6 +20949,35 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 		width: 45px;
 	}
 }
+
+
+/* Products */ 
+.products-title {
+	color: #666;
+}
+
+.products-description, .products-title {
+	text-align: left;
+}
+
+.products-title-line {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0 0 10px;
+	margin: 0 0 15px;
+}
+
+@media (width: 991px) {
+	.left-columm, .right-columm {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.left-columm, .right-columm {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
 
 /*
 *
