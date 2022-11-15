@@ -20960,15 +20960,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	color: #666;
 }
 
-.products-main-info {
-	font-size: 17px;
-	width: 69%;
-
-	margin: 10px auto;
-}
 
 .products-title {
 	color: #666;
+	font-weight: bold;
 }
 
 .products-description, .products-title {
