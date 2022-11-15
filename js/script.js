@@ -71,6 +71,12 @@
 		$window.on( 'scroll', scrollHandler );
 	}
 
+	$('.rd-navbar-nav a').on('click', function() {
+		$('.rd-navbar-nav').find('a.active').removeClass('active');
+		// you had  $(this).parent('a').addClass('active') - but there IS no "a" parent... you want the active class on the clicked element....
+		$(this).addClass('active');
+	});
+
 
 	// Initialize scripts that require a finished document
 	$( function () {
