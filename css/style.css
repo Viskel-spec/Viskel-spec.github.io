@@ -20970,6 +20970,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .products-title {
 	color: #666;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .products-description,

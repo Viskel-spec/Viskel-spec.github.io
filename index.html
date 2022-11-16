@@ -14,6 +14,7 @@
     href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="itc-slider.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/rd-navbar.css">
   <style>
@@ -75,14 +76,9 @@
                   <div class="rd-navbar-nav-wrap">
                     <ul class="rd-navbar-nav">
                       <li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Главная</a></li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Услуги</a></li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="test.html">Тест</a></li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#team">О нас</a></li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">Контакты</a></li>
                       <li class="rd-nav-item rd-navbar--has-megamenu rd-navbar-submenu">
                         <a class="rd-nav-link" href="#features">Каталог</a><span
                           class="rd-navbar-submenu-toggle"></span>
-
                         <!-- RD Navbar Megamenu -->
                         <ul class="rd-navbar-megamenu rd-navbar-open-right">
                           <li>
@@ -98,17 +94,17 @@
                           <li>
                             <ul>
                               <li>
-                                <a href="#">Песок</a>
+                                <a href="wet-wipes.html">ВЛАЖНЫЕ САЛФЕТКИ</a>
                               </li>
                               <li>
-                                <a href="#">Сахар 3</a>
+                                <a href="shoe-covers.html">ШАПОЧКИ И БАХИЛЫ</a>
                               </li>
                             </ul>
                           </li>
                           <li>
                             <ul>
                               <li>
-                                <a href="#">Салфетки</a>
+                                <a href="toothpick.html">ЗУБОЧИСТКИ</a>
                               </li>
                             </ul>
                           </li>
@@ -116,7 +112,7 @@
                             <ul>
 
                               <li>
-                                <a href="#">Шапочки</a>
+                                <a href="kit.html">НАБОРЫ В АССОРТИМЕНТЕ</a>
                               </li>
                             </ul>
                           </li>
@@ -129,8 +125,10 @@
                           </li>
                         </ul>
                         <!-- END RD Navbar Megamenu -->
-
                       </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#services">Услуги</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#team">О нас</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="#contacts">Контакты</a></li>
                     </ul>
                   </div>
                 </div>
@@ -139,57 +137,36 @@
           </nav>
         </div>
       </header>
-      <!-- Swiper-->
-      <section class="section swiper-container swiper-slider swiper-slider-classic" data-loop="true"
-        data-autoplay="4859" data-simulate-touch="true" data-direction="vertical" data-nav="false">
-        <div class="swiper-wrapper text-center">
-          <div class="swiper-slide" data-slide-bg="images/slider/BigBanner.jpg">
-            <div class="swiper-slide-caption section-md">
-              <div class="container">
-                <!--                 <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Lorem, ipsum dolor.</h1>
-                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Architecto, iste?</p> -->
-                <!-- <a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal"
-                  data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a> -->
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide" data-slide-bg="images/slider/BigBanner2.jpg">
-            <div class="swiper-slide-caption section-md">
-              <div class="container">
-                <!--  <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Lorem, ipsum dolor.</h1>
-                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Lorem, ipsum
-                  dolor sit amet consectetur adipisicing elit. Optio quae nostrum natus, quos suscipit error?</p> -->
-                <!-- <a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal"
-                  data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a> -->
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide" data-slide-bg="images/slider/BigBanner3.jpg">
-            <div class="swiper-slide-caption section-md">
-              <div class="container">
-                <!-- <h1 data-caption-animate="fadeInLeft" data-caption-delay="0">Lorem ipsum dolor sit.</h1>
-                <p class="text-width-large" data-caption-animate="fadeInRight" data-caption-delay="100">Lorem, ipsum
-                  dolor sit amet consectetur adipisicing elit. Quaerat laboriosam labore, consectetur dolores fugiat
-                  inventore eos, placeat temporibus provident iusto, nobis voluptatum aut asperiores repudiandae?
-                </p> -->
-                <!-- <a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal"
-                  data-caption-animate="fadeInUp" data-caption-delay="200">Get in touch</a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Swiper Pagination-->
-        <div class="swiper-pagination__module">
-          <div class="swiper-pagination__fraction"><span class="swiper-pagination__fraction-index">00</span><span
-              class="swiper-pagination__fraction-divider">/</span><span
-              class="swiper-pagination__fraction-count">00</span></div>
-          <div class="swiper-pagination__divider"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
 
+      <section class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="3000">
+        <div class="itc-slider__wrapper">
+          <div class="itc-slider__items">
+            <div class="itc-slider__item">
+              <img src="images/slider/BigBanner.jpg" alt="">
+            </div>
+            <div class="itc-slider__item">
+              <img src="images/slider/BigBanner2.jpg" alt="">
+            </div>
+            <div class="itc-slider__item">
+              <img src="images/slider/BigBanner3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+        <ol class="itc-slider__indicators">
+          <li class="itc-slider__indicator hvr-sweep-to-right" data-slide-to="0"></li>
+          <li class="itc-slider__indicator hvr-sweep-to-right" data-slide-to="1"></li>
+          <li class="itc-slider__indicator hvr-sweep-to-right" data-slide-to="2"></li>
+        </ol>
+      </section>
     </div>
+
+
+
+
+
+
+
     <!-- See all services-->
     <section class="section section-sm section-first bg-default text-center" id="services">
       <div class="container">
@@ -795,6 +772,7 @@
   <div class="snackbars" id="form-output-global"></div>
   <!-- Javascript-->
   <script src="js/core.min.js"></script>
+  <script src="itc-slider.js"></script>
   <script src="js/script.js"></script>
   <!-- coded by Himic-->
 </body>
