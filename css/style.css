@@ -20957,6 +20957,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 
+.AboutUs-test {
+	margin: auto;
+	align-items: column;
+}
+
 /* Products */
 
 .products-main-title {
