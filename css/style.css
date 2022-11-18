@@ -417,7 +417,7 @@ a:hover {
 a,
 a:focus,
 a:active {
-	color: #6689ff;
+	color: #00afef;
 }
 
 a:hover {
@@ -855,7 +855,7 @@ a[href*='mailto'] {
 	height: 100%;
 	left: 50%;
 	right: 50%;
-	background: #a3b8ff;
+	background: #00afef;
 	transition: all .3s ease;
 }
 
@@ -2855,8 +2855,8 @@ hr {
 .button-primary,
 .button-primary:focus {
 	color: #ffffff;
-	background-color: #6689ff;
-	border-color: #6689ff;
+	background-color: #00afef;
+	border-color: #00afef;
 }
 
 .button-primary:hover,
@@ -13510,7 +13510,7 @@ html:not(.lt-ie10) .not-animated {
 	font-size: 20px;
 	line-height: 38px;
 	color: #ffffff;
-	background: #6689ff;
+	background: #00afef;
 	overflow: hidden;
 	text-align: center;
 	text-decoration: none;
@@ -13519,7 +13519,7 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .ui-to-top:hover {
-	color: #ffffff;
+	color: #fff212;
 	background: #111111;
 	text-decoration: none;
 }
@@ -15784,7 +15784,7 @@ html.rd-navbar-fixed-linked .page-header {
 	left: 0;
 	height: 3px;
 	width: 100%;
-	background: #6689ff;
+	background: #00afef;
 	opacity: 0;
 	visibility: hidden;
 	transform: translateY(5px);
@@ -17625,11 +17625,11 @@ h3+.isotope-filters {
 	}
 
 	.isotope-filters-list a:hover {
-		color: #6689ff;
+		color: #00afef;
 	}
 
 	.isotope-filters-list a.active {
-		color: #6689ff;
+		color: #00afef;
 		background: transparent;
 	}
 
