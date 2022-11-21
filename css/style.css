@@ -824,7 +824,7 @@ a[href*='mailto'] {
 }
 
 .box-icon-modern-title a:hover {
-	color: #6689ff;
+	color: #00afef;
 }
 
 .box-icon-modern-big-title {
@@ -1236,14 +1236,14 @@ a[href*='mailto'] {
 .box-contacts-icon {
 	font-size: 60px;
 	line-height: 1;
-	color: #6689ff;
+	color: #00afef;
 }
 
 .box-contacts-decor {
 	margin: 30px auto;
 	height: 2px;
 	max-width: 100px;
-	background: #6689ff;
+	background: #00afef;
 	transition: all .3s ease-in-out;
 }
 
@@ -3001,7 +3001,7 @@ hr {
 
 .button-secondary.button-pipaluk::before,
 .button-secondary.button-pipaluk:focus::before {
-	background: #6689ff;
+	background: #00afef;
 	border-color: #151515;
 }
 
@@ -8880,7 +8880,7 @@ textarea.textarea-lg {
 }
 
 .footer-list-category-2 a:hover {
-	color: #6689ff;
+	color: #00afef;
 }
 
 @media (max-width: 767px) {

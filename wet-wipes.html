@@ -14,6 +14,7 @@
     href="//fonts.googleapis.com/css?family=Poppins:400,500,600%7CTeko:300,400,500%7CMaven+Pro:500">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="itc-slider.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/rd-navbar.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -141,11 +142,36 @@
 
     <section class="products">
       <div class="container">
-        <h1 class="products-main-title">Влажные салфетки в индивидуальной упаковке <br>с логотипом вашей компании и без</h1>
+        <h1 class="products-main-title">Влажные салфетки в индивидуальной упаковке <br>с логотипом вашей компании и без
+        </h1>
         <div class="row">
           <div class="left-columm col-lg-5 col-md-12">
-            <div class="products-img">
-              <a href="/images/wet-wipes/салфетки 800_534.jpg"><img src="/images/wet-wipes/салфетки 800_534.jpg" alt=""></a>
+            <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="7000">
+              <div class="itc-slider__wrapper">
+                <div class="itc-slider__items">
+                  <div class="itc-slider__item">
+                    <img src="images/wet-wipes/Салфетки 800_534v1.jpg" alt="">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="images/wet-wipes/Салфетки 800_534v2.jpg" alt="">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="images/wet-wipes/Салфетки v3.jpg" alt="">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="images/wet-wipes/Салфетки 800_534v4.jpg" alt="">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="images/wet-wipes/Салфетки 800_534v5.jpg" alt="">
+                  </div>
+                  <div class="itc-slider__item">
+                    <img src="images/wet-wipes/спиртовые Салфетки 800_534(2) copy 7.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+              <button class="itc-slider__btn itc-slider__btn_prev"></button>
+              <button class="itc-slider__btn itc-slider__btn_next"></button>
             </div>
           </div>
           <div class="right-columm col-lg-7 col-md-12">
@@ -153,12 +179,13 @@
               <h4 class="products-title">ВЛАЖНЫЕ САЛФЕТКИ</h4>
               <span class="products-title-line float-left w-100"></span>
               <p class="products-description">
-                Виды салфеток - ароматизированные, освежающие, дезинфицирующие, спиртосодержащие 
+                Виды салфеток - ароматизированные, освежающие, дезинфицирующие, спиртосодержащие
                 <span class="d-block font-weight-bold">Материал фасовки:</span>
-                <span class="d-block">•	Бумага упаковочная водостойкая + алюминиевая фольга </span>
-                <span class="d-block">•	РЕТ 65 -100 мкр</span>
+                <span class="d-block">• Бумага упаковочная водостойкая + алюминиевая фольга </span>
+                <span class="d-block">• РЕТ 65 -100 мкр</span>
                 <span class="d-block font-weight-bold">Выпускается в размерах:</span>
-                <span class="d-block">50*50 мм |  50*60 мм | 60*80 мм | 70*80 ММ | 60*100 мм | 60*120 мм| 70*120 мм | </span>
+                <span class="d-block">50*50 мм | 50*60 мм | 60*80 мм | 70*80 ММ | 60*100 мм | 60*120 мм| 70*120 мм |
+                </span>
               </p>
             </div>
           </div>
@@ -364,6 +391,7 @@
   <div class="snackbars" id="form-output-global"></div>
   <!-- Javascript-->
   <script src="js/core.min.js"></script>
+  <script src="itc-slider.js"></script>
   <script src="js/jquery.rd-navbar.js"></script>
   <script src="js/script.js"></script>
   <!-- coded by Himic-->
