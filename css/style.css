@@ -241,7 +241,7 @@ html p a:hover {
 */
 
 
-.products-bg {
+.ornament-bg {
 		background-image: url(../images/Орнамент.svg);
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -757,7 +757,6 @@ a[href*='mailto'] {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 66px 15px 50px;
-	background: #ffffff;
 	box-shadow: 0 0 13px -4px rgba(0, 0, 0, 0.17);
 	transition: all .3s ease;
 }
