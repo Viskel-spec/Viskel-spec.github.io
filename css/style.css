@@ -1273,7 +1273,7 @@ a[href*='mailto'] {
 }
 
 .box-contacts-link a:hover {
-	color: #6689ff;
+	color: #00afef;
 }
 
 @media (min-width: 992px) {
@@ -6912,11 +6912,11 @@ textarea.textarea-lg {
 }
 
 .thumbnail-classic-title-wrap .icon:hover {
-	color: #6689ff;
+	color: #00afef;
 }
 
 .thumbnail-classic-title {
-	color: #6689ff;
+	color: #00afef;
 }
 
 .thumbnail-classic-title a,
@@ -20984,6 +20984,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	color: #666;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-top: 20px
 }
 
 .products-description,
