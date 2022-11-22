@@ -239,6 +239,20 @@ html p a:hover {
 *
 * Typography
 */
+
+
+.products-bg {
+		background-image: url(../images/Орнамент.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+
 body {
 	font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
