@@ -16,7 +16,12 @@
   padding: 6px 16px;
 } */
 
-
+.testwa {
+	display: block;
+	font-size: 20px;
+	color: green;
+	margin-right: 5px;
+}
 
 .test100 {
 	-webkit-text-fill-color: transparent;
