@@ -16,6 +16,32 @@
   padding: 6px 16px;
 } */
 
+
+
+.test100 {
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(-62deg, #45476f, #6689ff);
+	-webkit-background-clip: text;
+	font-size: 70px;
+}
+
+.test400 {
+	-webkit-text-fill-color: transparent;
+  background: linear-gradient(-62deg, #45476f, #6689ff);
+  -webkit-background-clip: text;
+  font-size: 84px;
+}
+
+.testDollar {
+	font-size: 69px;
+	margin-bottom: 5px;
+}
+
+.test10 {
+	font-size: 64px;
+}
+
+
 .rd-navbar-static .rd-navbar-dropdown li.focus>a,
 .rd-navbar-static .rd-navbar-dropdown li.opened>a,
 .rd-navbar-static .rd-navbar-dropdown a:hover,
