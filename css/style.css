@@ -15,15 +15,13 @@
 }
 
 
-.rd-navbar-static .rd-navbar-dropdown li.focus>a,
-.rd-navbar-static .rd-navbar-dropdown li.opened>a,
-.rd-navbar-static .rd-navbar-dropdown a:hover,
-.rd-navbar-static .rd-navbar-megamenu li.focus>a,
-.rd-navbar-static .rd-navbar-megamenu li.opened>a,
+.rd-navbar-static .rd-navbar-dropdown li.focus > a, .rd-navbar-static .rd-navbar-dropdown li.opened > a, .rd-navbar-static .rd-navbar-dropdown a:hover,
+.rd-navbar-static .rd-navbar-megamenu li.focus > a,
+.rd-navbar-static .rd-navbar-megamenu li.opened > a,
 .rd-navbar-static .rd-navbar-megamenu a:hover {
-	color: #fff;
-	background: #007bff;
-	z-index: 1;
+  color: #fff;
+  background: #00afef;
+  z-index: 1;
 }
 
 .rd-navbar-static .rd-navbar-dropdown {
@@ -127,7 +125,10 @@ p {
 	margin: 0;
 }
 
-
+/*
+*
+* About-us
+*/
 
 .About-us-text {
 	display: inline-block !important;
@@ -152,6 +153,14 @@ p {
 	font-size: 15px;
 	margin: auto;
 	margin-top: 30px;
+}
+
+@media (max-width: 594px) {
+
+	.About-us-quote {
+		width: 100%;
+		padding: 47px 23px;
+	}
 }
 
 ul,
@@ -184,11 +193,10 @@ ol li {
 		background-image: url(../images/Орнамент.svg);
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-attachment: fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+		-webkit-background-size: auto;
+		-moz-background-size: auto;
+		-o-background-size: auto;
+		background-size: auto;
 	}
 
 
@@ -885,12 +893,12 @@ img {
 
 .button-default-outline.button-wapasha::after,
 .button-default-outline.button-wapasha:focus::after {
-	border-color: #6689ff;
+	border-color: #00afef;
 }
 
 .button-default-outline.button-wapasha:hover,
 .button-default-outline.button-wapasha:active {
-	color: #6689ff;
+	color: #00afef;
 	background: transparent;
 }
 
@@ -904,8 +912,8 @@ img {
 .button-default-outline-2:hover,
 .button-default-outline-2:active {
 	color: #ffffff;
-	background-color: #6689ff;
-	border-color: #6689ff;
+	background-color: #00afef;
+	border-color: #00afef;
 }
 
 .button-default-outline-2.button-ujarak::before {
@@ -2621,6 +2629,51 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	}
 }
 
+/* Products */
+
+.products-main-title {
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-top: 30px;
+	color: #666;
+}
+
+
+.products-title {
+	color: #666;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 20px
+}
+
+.products-description,
+.products-title {
+	text-align: left;
+}
+
+.products-title-line {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0 0 10px;
+	margin: 0 0 15px;
+}
+
+@media (width: 991px) {
+
+	.left-columm,
+	.right-columm {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.left-columm,
+.right-columm {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+
 
 /*
 *
@@ -4156,7 +4209,7 @@ html [class*='section-'].section-top-0 {
 .footer-corporate.context-dark .footer-corporate-bottom-panel a:hover,
 .footer-corporate.bg-gray-dark .footer-corporate-bottom-panel a:hover,
 .footer-corporate.bg-primary .footer-corporate-bottom-panel a:hover {
-	color: #6689ff;
+	color: #00afef;
 }
 
 .footer-minimal.context-dark .rights,
@@ -6865,7 +6918,7 @@ html.tablet .ui-to-top {
 .rd-navbar-fixed .rd-nav-item.active .rd-nav-link,
 .rd-navbar-fixed .rd-nav-item.opened .rd-nav-link {
 	color: #ffffff;
-	background: #6689ff;
+	background: #00afef;
 }
 
 .rd-navbar-fixed .rd-nav-item:hover>.rd-navbar-submenu-toggle,
@@ -7732,6 +7785,158 @@ html.rd-navbar-fixed-linked .page-header {
 	margin-top: 20px;
 }
 
+.rd-navbar, .rd-navbar.rd-navbar--is-clone {
+  display: none;
+}
+
+.rd-navbar-fixed,
+.rd-navbar-static,
+.rd-navbar-fullwidth,
+.rd-navbar-sidebar {
+  display: block;
+}
+
+.rd-navbar-static {
+  background: #fff;
+}
+
+.rd-navbar-static .rd-navbar-dropdown,
+.rd-navbar-static .rd-navbar-megamenu {
+  position: absolute;
+  padding: 8px 0;
+  color: #999;
+  background: #fff;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.10));
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+}
+
+.rd-navbar-static .rd-navbar-dropdown li > a,
+.rd-navbar-static .rd-navbar-megamenu li > a {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 6px 16px;
+}
+
+.rd-navbar-static .rd-navbar-megamenu {
+  margin-top: 10px;
+  left: 0;
+  right: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 16px 8px;
+}
+
+.rd-navbar-static .rd-navbar-megamenu > li {
+  display: table-cell;
+}
+
+
+.rd-navbar-static .rd-navbar-nav > li {
+  display: inline-block;
+}
+
+.rd-navbar-static .rd-navbar-nav > li > .rd-navbar-dropdown, .rd-navbar-static .rd-navbar-nav > li > .rd-navbar-megamenu {
+  top: 100%;
+  z-index: 1;
+}
+
+.rd-navbar-static .rd-navbar-nav > li.active > a, .rd-navbar-static .rd-navbar-nav > li.opened > a, .rd-navbar-static .rd-navbar-nav > li.focus > a, .rd-navbar-static .rd-navbar-nav > li > a:hover {
+  color: black;
+}
+
+
+.rd-navbar-fixed .rd-navbar-nav-wrap {
+  position: fixed;
+  top: -56px;
+  left: 0;
+  width: 232px;
+  padding: 112px 0 56px;
+  bottom: -56px;
+  color: #999;
+  background: #fff;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);
+}
+
+.rd-navbar-fixed .rd-navbar-nav-wrap.active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.rd-navbar-fixed .rd-navbar-nav {
+  display: block;
+  height: 100%;
+  overflow: auto;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.rd-navbar-fixed .rd-navbar-nav:before, .rd-navbar-fixed .rd-navbar-nav:after {
+  content: '';
+  display: block;
+  height: 8px;
+}
+
+.rd-navbar-fixed .rd-navbar-nav li > a {
+  display: block;
+  padding: 11px 56px 11px 16px;
+  color: #333;
+}
+
+.rd-navbar-fixed .rd-navbar-nav li.opened > a, .rd-navbar-fixed .rd-navbar-nav li a:hover {
+	color: #fff;
+  background: #00afef;
+}
+
+/*
+* @subsection   RD Navbar Brand
+*
+* @description  Describes style declarations for RD Navbar brand
+*/
+.rd-navbar-brand {
+  display: none;
+  color: #333;
+}
+
+.rd-navbar-static .rd-navbar-brand {
+  display: inline-block;
+  float: left;
+}
+
+.rd-navbar-static .rd-navbar-brand > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.rd-navbar-static .rd-navbar-brand > a {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+/*
+* @subsection   RD Navbar Toggles
+*
+* @description  Describes style declarations for RD Navbar panel
+*/
+
+.rd-navbar-fixed .rd-navbar-toggle {
+  position: fixed;
+  z-index: 17;
+  top: 4px;
+  left: 4px;
+}
+
+
 /*
 *
 * Isotope
@@ -8028,12 +8233,12 @@ h3+.isotope-filters {
 }
 
 [class*='isotope-filters-list'] a:hover {
-	color: #6689ff;
+	color: #00afef;
 }
 
 [class*='isotope-filters-list'] a.active {
 	color: #ffffff;
-	background: #6689ff;
+	background: #00afef;
 }
 
 @media (min-width: 992px) {
@@ -9291,3 +9496,4 @@ h1+.tabs-line {
 		width: auto;
 	}
 }
+

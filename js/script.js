@@ -54,6 +54,19 @@
 		return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
 	}
 
+
+	let ok = false;                    
+		window.addEventListener('scroll', function() {
+    		if (ok === false) {
+        		ok = true;    
+        		setTimeout(() => {                    
+								let script = document.createElement('script');
+								script.src = 'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A04110b77a0129ced9f01986eea180ef2f906f8a2b6e04bb0e3ae7f1906c5bc9f&amp;width=100%25&amp;height=524&amp;lang=ru_RU&amp;scroll=true';
+								document.getElementById('yamap').replaceWith(script);                        
+        		}, 1000)    
+    		}
+		});
+
 	/**
 	 * @desc Calls a function when element has been scrolled into the view
 	 * @param {object} element - jQuery object
@@ -1447,11 +1460,6 @@
 					"background_size":     "cover"
 				}
 			} )
-		}
-
-		// Google maps
-		if ( plugins.maps.length ) {
-			lazyInit( plugins.maps, initMaps );
 		}
 
 	} );
